@@ -116,6 +116,7 @@ void matrix_scan_user(void) {
         case 2: {//SHOTGUN
             if(timer_elapsed(key_timer)>50) {
                 SEND_STRING(
+                    SS_TAP(X_F7)
                     SS_DOWN(X_F4)
                     SS_DELAY(200)
                     SS_TAP(X_DOT)
