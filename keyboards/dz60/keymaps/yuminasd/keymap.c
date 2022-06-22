@@ -30,9 +30,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case HAMMER:
             if (record->event.pressed) {
                 SEND_STRING(
-                    SS_TAP(X_F8)SS_DOWN(X_F4) SS_DELAY(200) SS_TAP(X_F1) SS_DELAY(300) SS_TAP(X_F2) SS_DELAY(200) SS_UP(X_F4) SS_DELAY(5) SS_TAP(X_SCLN)
-                    SS_TAP(X_F8)SS_DOWN(X_F4) SS_DELAY(200) SS_TAP(X_F1) SS_DELAY(300) SS_TAP(X_F2) SS_DELAY(200) SS_UP(X_F4) SS_DELAY(5) SS_TAP(X_SCLN)
-                    SS_TAP(X_F8)SS_DOWN(X_F4) SS_DELAY(200) SS_TAP(X_F1) SS_DELAY(300) SS_TAP(X_F2) SS_DELAY(200) SS_UP(X_F4) SS_DELAY(5) SS_TAP(X_SCLN)
+                  //  SS_TAP(X_F8)SS_DOWN(X_F4) SS_DELAY(200) SS_TAP(X_F1) SS_DELAY(300) SS_TAP(X_F2) SS_DELAY(200) SS_UP(X_F4) SS_DELAY(5) SS_TAP(X_SCLN)
                     SS_DOWN(X_N)
                     SS_DOWN(X_F4)
                     SS_TAP(X_F3)
